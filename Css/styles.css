@@ -20,6 +20,10 @@ footer {
     height: 10vh;
 }
 
+#parejaViajando{
+    opacity: 100%;
+}
+
 /* Centrar h1, video y contenido del footer */
 h1,
 iframe,
