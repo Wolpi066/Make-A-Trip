@@ -9,21 +9,23 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Barra de navegación y footer color celeste */
 header,
 footer {
     background-color: #6da3c7;
-    /* Barra de navegación y footer color celeste */
+    
 }
 
 footer {
     height: 10vh;
 }
 
+/* Centrar h1, video y contenido del footer */
 h1,
 iframe,
 footer {
     text-align: center;
-    /* Centrar h1, video y contenido del footer */
+    
 }
 
 h1 {
@@ -46,16 +48,19 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Ajustar el tamaño máximo del logo de la barra de navegación */
 nav.navbar .navbar-brand img {
     max-height: 80px;
-    /* Ajustar el tamaño máximo del logo de la barra de navegación */
+    
 }
 
+/* Convertir el elemento iframe en un bloque */
+/* Centrar horizontalmente el video utilizando márgenes automáticos */
 iframe {
     display: block;
-    /* Convertir el elemento iframe en un bloque */
+    
     margin: 0 auto;
-    /* Centrar horizontalmente el video utilizando márgenes automáticos */
+    
 }
 
 .btn-custom {
@@ -74,7 +79,6 @@ iframe {
 
 .dropdown-menu {
     background-color: #456789;
-    /* Reemplaza el valor con el color deseado */
 }
 
 @media (max-width: 768px) {
@@ -117,7 +121,6 @@ iframe {
     }
 }
 
-/* Estilos para la barra de navegación en todos los dispositivos */
 .navbar {
     width: 100%;
 }
@@ -278,7 +281,6 @@ img {
 
 #section5 .container img {
     width: 35rem;
-    /* Cambia el valor a 3  /* Cambia el valor a 3 veces la altura original */
     margin-left: 20px;
     border-radius: 15px;
 }
