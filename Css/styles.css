@@ -13,14 +13,14 @@ body {
 header,
 footer {
     background-color: #6da3c7;
-    
+
 }
 
 footer {
     height: 10vh;
 }
 
-#parejaViajando{
+#parejaViajando {
     opacity: 100%;
 }
 
@@ -29,7 +29,7 @@ h1,
 iframe,
 footer {
     text-align: center;
-    
+
 }
 
 h1 {
@@ -55,16 +55,16 @@ h1 {
 /* Ajustar el tamaño máximo del logo de la barra de navegación */
 nav.navbar .navbar-brand img {
     max-height: 80px;
-    
+
 }
 
 /* Convertir el elemento iframe en un bloque */
 /* Centrar horizontalmente el video utilizando márgenes automáticos */
 iframe {
     display: block;
-    
+
     margin: 0 auto;
-    
+
 }
 
 .btn-custom {
@@ -110,6 +110,10 @@ iframe {
     .video-wrapper iframe {
         width: 100%;
         height: 100%;
+    }
+
+    #section5 .container {
+        flex-direction: column;
     }
 
 }
@@ -368,4 +372,12 @@ button {
 
 button[type="reset"] {
     background-color: #f44336;
+}
+
+@media screen and (max-width: 480px) {
+
+    #section5 .container div,
+    #section5 .container img {
+        flex-basis: 100%;
+    }
 }
