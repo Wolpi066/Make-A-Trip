@@ -1,5 +1,6 @@
 header {
-    background: linear-gradient(to right, $color-gradiente...);
+    $header-gradient: linear-gradient(to right, map-get($color-gradiente, izquierda), map-get($color-gradiente, centro-izquierda), map-get($color-gradiente, centro-derecha), map-get($color-gradiente, derecha));
+    background: $header-gradient;
     padding: 10px 0;
     color: $color-light;
 }

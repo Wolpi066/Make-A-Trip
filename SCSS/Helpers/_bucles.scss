@@ -1,16 +1,16 @@
 //Bucle para crear gradientes
 @each $posicion,
 $color in $color-gradiente {
-    $i: index($color-gradiente, $color); // Obtener el índice del color
-
-    &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% / length($color-gradiente);
-        height: 100%;
-        background-color: nth($color, $i);
-        z-index: -1;
+    .image-wrapper.#{$posicion} {
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, map-get($color-gradiente, $posicion));
+            z-index: -1;
+        }
     }
 }
