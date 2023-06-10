@@ -115,7 +115,7 @@ nav.navbar .navbar-brand img {
 }
 
 .navbar-brand img {
-  height: 50px;
+  height: 4rem;
 }
 
 .navbar-nav .nav-link {
@@ -251,14 +251,17 @@ body {
   justify-content: center;
 }
 
-.image-wrapper :not(#parejaViajando) {
+.image-wrapper {
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
 }
-.image-wrapper :not(#parejaViajando) img {
+.image-wrapper img {
+  width: 100%;
+  height: auto;
   transition: transform 0.3s ease;
 }
-.image-wrapper :not(#parejaViajando):hover img {
+.image-wrapper:hover img:not(#parejaViajando) {
   transform: scale(1.1);
 }
 
@@ -270,6 +273,12 @@ body {
   opacity: 1;
 }
 
+.logo {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+}
+
 .text-overlay {
   position: absolute;
   top: 0;
@@ -278,17 +287,25 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: opacity 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
 .text-overlay:hover .text-overlay {
   opacity: 1;
+}
+.text-overlay.animate__animated.animate__fadeIn {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.text-overlay.animate__animated.animate__fadeIn.animate__fadeOut {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .text-overlay strong {
@@ -307,6 +324,41 @@ body {
   color: #456789;
 }
 
+/*
+.tour-image_text:hover {
+    animation-name: fadeInDown;
+}
+
+
+.tour-image_text:not(:hover) {
+    animation-name: fadeOutUp;
+    opacity: 0;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+        transform: none;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+}
+*/
 .custom-button, .btn-custom {
   background-color: #28a7a7;
   border-color: #28a7a7;

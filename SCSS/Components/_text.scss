@@ -6,17 +6,29 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
-    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: opacity 0.3s ease;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
     @include border-radius(10px); // Aplicar bordes redondos
     @include card-animation; // Aplicar animacion de tarjeta
 
     &:hover .text-overlay {
         opacity: 1;
+    }
+
+    &.animate__animated {
+        &.animate__fadeIn {
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards; // Mantener el estado final de la animación
+
+            &.animate__fadeOut {
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+        }
     }
 }
 
@@ -35,3 +47,39 @@
     font-weight: 700;
     color: $color-primary;
 }
+
+/*
+.tour-image_text:hover {
+    animation-name: fadeInDown;
+}
+
+
+.tour-image_text:not(:hover) {
+    animation-name: fadeOutUp;
+    opacity: 0;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+        transform: none;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+}
+*/

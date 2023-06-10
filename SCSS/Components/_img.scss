@@ -3,15 +3,20 @@
     justify-content: center;
 }
 
-.image-wrapper :not(#parejaViajando) {
+.image-wrapper {
     position: relative;
     overflow: hidden;
+    border-radius: $border-radius;
 
     img {
+        width: 100%;
+        height: auto;
         @include card-animation;
+
+
     }
 
-    &:hover img {
+    &:hover img:not(#parejaViajando) {
         transform: scale(1.1);
     }
 }
@@ -22,4 +27,11 @@
 
 .image-wrapper:hover .text-overlay {
     opacity: 1;
+
+}
+
+.logo {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
 }
