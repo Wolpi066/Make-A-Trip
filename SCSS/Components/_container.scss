@@ -1,6 +1,17 @@
+.container.top5 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .container .text-container {
+    background-color: cornflowerblue;
     text-align: center;
     justify-content: center;
+    border-radius: $border-radius;
+
+    &:first-child {
+        padding-top: 2%;
+    }
 }
 
 .container div img {
@@ -23,8 +34,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 0;
-    margin-bottom: 50px;
 }
 
 .container {

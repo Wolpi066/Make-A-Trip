@@ -6,7 +6,11 @@
     margin-top: 20px;
 }
 
-.carousel-item img {
+.carousel-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
     border-radius: $border-radius;
 }
 
@@ -16,8 +20,8 @@
 }
 
 .carousel-caption h5 {
-    color: $color-dark;
-    font-size: 2rem;
+    color: brown;
+    font-size: 3rem;
     font-weight: bold;
     font-size: 24px;
 }
