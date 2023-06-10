@@ -1,0 +1,19 @@
+.card-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    max-width: 18rem;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}

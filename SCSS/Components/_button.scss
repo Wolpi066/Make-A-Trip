@@ -1,0 +1,13 @@
+%button-style {
+    background-color: $color-accent;
+    border-color: $color-accent;
+    color: $color-light;
+}
+
+.btn-custom {
+    @extend %button-style;
+}
+
+.custom-button {
+    @extend %button-style;
+}

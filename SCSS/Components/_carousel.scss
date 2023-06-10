@@ -1,0 +1,23 @@
+.carousel {
+    background-color: $color-primary;
+}
+
+#carouselExample {
+    margin-top: 20px;
+}
+
+.carousel-item img {
+    border-radius: $border-radius;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: $color-primary;
+}
+
+.carousel-caption h5 {
+    color: $color-dark;
+    font-size: 2rem;
+    font-weight: bold;
+    font-size: 24px;
+}
