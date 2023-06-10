@@ -1,6 +1,7 @@
 header {
-    background: $gradient-color;
+    background: linear-gradient(to right, $color-gradiente...);
     padding: 10px 0;
+    color: $color-light;
 }
 
 h1,
