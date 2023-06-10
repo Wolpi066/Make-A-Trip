@@ -3,22 +3,26 @@
     justify-content: center;
 }
 
-.image-wrapper {
+.image-wrapper :not(#parejaViajando){
     position: relative;
     overflow: hidden;
+    margin-bottom: 20px; 
 }
 
 .image-wrapper img {
     width: 100%;
     height: auto;
+    transition: transform 0.3s;
+}
+
+.image-wrapper:hover img :not(#parejaViajando){
+    transform: scale(1.1);
 }
 
 .image-wrapper:last-child {
     margin-right: 0;
 }
 
-.image-wrapper img {
-    opacity: 0.8;
-    border-radius: 5px;
-    height: 25rem;
+.image-wrapper:hover .text-overlay {
+    opacity: 1;
 }

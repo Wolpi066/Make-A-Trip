@@ -1,4 +1,14 @@
 footer {
-    background-color: $color-primary;
-    height: 10vh;
+    background: $gradient-color;
+    color: $color-light;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
 }

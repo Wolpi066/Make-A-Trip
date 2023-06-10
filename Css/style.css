@@ -42,7 +42,8 @@
 }
 
 header {
-  background-color: #456789;
+  background: linear-gradient(to right, #001E6C, #005FAB, #0088BF, #00B4D8);
+  padding: 10px 0;
 }
 
 h1,
@@ -65,16 +66,42 @@ nav.navbar .navbar-brand img {
 }
 
 .dropdown-menu {
-  background-color: #456789;
+  background: linear-gradient(to right, #001E6C, #005FAB, #0088BF, #00B4D8);
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.navbar-nav .nav-link {
+  color: #FFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FFD166;
 }
 
 footer {
-  background-color: #456789;
-  height: 10vh;
+  background: linear-gradient(to right, #001E6C, #005FAB, #0088BF, #00B4D8);
+  color: #ffffff;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
 }
 
 body {
-  background-color: #456789;
+  background-color: #55d3d3;
   font-family: Arial, sans-serif;
 }
 
@@ -154,6 +181,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 50px 0;
+  margin-bottom: 50px;
 }
 
 .container {
@@ -178,43 +206,63 @@ body {
   justify-content: center;
 }
 
-.image-wrapper {
+.image-wrapper :not(#parejaViajando) {
   position: relative;
-  margin-right: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.image-wrapper:hover img :not(#parejaViajando) {
+  transform: scale(1.1);
 }
 
 .image-wrapper:last-child {
   margin-right: 0;
 }
 
-.image-wrapper img {
-  opacity: 0.8;
-  border-radius: 5px;
-  height: 25rem;
-}
-
-.title {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.image-wrapper:hover .text-overlay {
+  opacity: 1;
 }
 
 .text-overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #ffffff;
-  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .text-overlay strong {
-  display: block;
+  color: #FFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  color: #456789;
 }
 
 .custom-button, .btn-custom {
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: #28a7a7;
+  border-color: #28a7a7;
   color: #ffffff;
 }
 
@@ -270,7 +318,7 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #28a745;
+  background-color: #28a7a7;
   color: #ffffff;
   cursor: pointer;
 }
@@ -300,7 +348,7 @@ button[type=reset] {
 }
 
 .carousel {
-  background-color: #456789;
+  background-color: #55d3d3;
 }
 
 #carouselExample {
@@ -313,7 +361,7 @@ button[type=reset] {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #456789;
+  background-color: #55d3d3;
 }
 
 .carousel-caption h5 {
