@@ -5,21 +5,14 @@
 }
 
 .image-wrapper:not(#parejaViajando) {
-    position: relative;
-    overflow: hidden;
     border-radius: $border-radius;
 
     img {
         width: 100%;
         height: auto;
-        @include card-animation;
-    }
-
-    &:hover img:not(#parejaViajando) {
-        transform: scale(1.1);
     }
 }
-
+/*
 .image-wrapper:last-child {
     margin-right: 0;
 }
@@ -28,7 +21,7 @@
     opacity: 1;
 
 }
-
+*/
 .logo {
     max-width: 150px;
     width: 100%;

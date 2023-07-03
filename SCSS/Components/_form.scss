@@ -1,10 +1,14 @@
 .contact-form {
     max-width: 400px;
-    margin: 1rem auto 1rem auto;
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .form-group {
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .label {
@@ -15,6 +19,7 @@
 .input-wrapper {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .input-wrapper label {
@@ -27,6 +32,8 @@ select {
     padding: 8px;
     border-radius: 4px;
     border: 1px solid #ccc;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
 }
 
 .checkbox-wrapper {

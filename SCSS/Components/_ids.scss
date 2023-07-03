@@ -57,6 +57,7 @@
 
 #mainForm{
     display: flex;
+    flex-wrap: wrap;
     background-color:cadetblue;
     justify-self: center;
     margin: 3% 30% 0 30%;
